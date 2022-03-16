@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="root" align="center">
+    
+    <h3>Rent / Fair Calculation</h3>
+    <hr>
+    <div class="row" style="display:inline-block;">
+        <div class="">
+            <select name="vehiclename" id="vehicle">
+                <option value="0">Select Vehicle</option>
+                <option value="bus">Bus</option>
+                <option value="car">Car</option>
+                <option value="train">Train</option>
+                <option value="bullet-train">Bullet Train</option>
+                <option value="aeroplane">Aeroplane</option>
+                <option value="ship">Ship</option>
+            </select>
+            <select name="pathdistance" id="distance">
+                <option value="0">Select Distance</option>
+                <option value="100">1 Kilometer</option>
+                <option value="200">2 Kilometer</option>
+                <option value="300">3 Kilometer</option>
+                <option value="400">4 Kilometer</option>
+                <option value="500">5 Kilometer</option>
+                <option value="1000">10 Kilometer</option>
+            </select>
+            <input id="calculate" type="text" value="" placeholder="Your Expected Rent is ..." disabled>
+            <button id="btn">Calculate</button>
+            <button id="cp-btn">Copy Here</button></br>
+        </div>
+    </div>
+    <hr>
+<div class="price-table" align="center">
+    <h3><em>Price Table</em></h3>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Area Name</th>
+                    <th>Vehicle</th>
+                    <th>Distance (km))</th>
+                    <th>Fair (BDT)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Dhaka</td>
+                    <td>Bus</td>
+                    <td>300</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Chittagong</td>
+                    <td>Bus</td>
+                    <td>300</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sylhet</td>
+                    <td>Bus</td>
+                    <td>300</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Khulna</td>
+                    <td>Bus</td>
+                    <td>300</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Barishal</td>
+                    <td>Bus</td>
+                    <td>300</td>
+                    <td>700</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
